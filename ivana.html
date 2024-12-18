@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--BOTTON-->
+    <div class="navbar bg-base-100">
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-5 w-5 stroke-current">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">Ivana Almira</a>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-5 w-5 stroke-current">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!---->
+      <div
+      class="hero min-h-screen"
+      style="background-image: url(data:image/jpeg;base64,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);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">ALLOO </h1>
+          <p class="mb-5">
+            Di website ini berisi portopolio tentang diri saya,seperti nama,tanggal lahir,sekolah,apa yang saya sukai,dan kegiatan saya akhir akhir ini.LET'S GO KITA LIHAT
+          </p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- About Me -->
+<div class="hero-content text-center">
+    <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold text-gray-900">Ivana Almira Aminto</h1>
+        <p class="mb-5 text-gray-700">
+            Nama saya Ivana Almira Aminto,kalian bisa panggil saya Ivana.Saya lahir di Demak 9 April 2009.Saya sekarang bersekolah di SMKN 9 Semarang jurusan PPLG.Apa ajasih yang saya sukai:
+        </p>
+    </div>
+</div>
+
+<!-- Card -->
+<div class="flex space-x-4">
+    <!-- Card 1 -->
+    <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+            <img src="img/make up 2.jpg" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title text-gray-900">
+                Beauty
+                <div class="badge badge-secondary">Make Up</div>
+            </h2>
+            <p class="text-gray-700">Saya menyukai make up,biasanya saya lakukan ketika waktu senggang</p>
+            <div class="card-actions justify-end">
+                <div class="badge badge-outline">Beauty</div>
+                <div class="badge badge-outline">Make Up</div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Card 2 -->
+    <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+            <img src="img/makanan.jpg" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title text-gray-900">
+                Food
+                <div class="badge badge-secondary">Yummy</div>
+            </h2>
+            <p class="text-gray-700">Saya suka mengeksplor banyak hal terutama resep dalam makanan</p>
+            <div class="card-actions justify-end">
+                <div class="badge badge-outline">Food</div>
+                <div class="badge badge-outline">Memasak</div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Card 3 -->
+    <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+            <img src="img/kucing.jpg" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title text-gray-900">
+                Animal
+                <div class="badge badge-secondary">Meow</div>
+            </h2>
+            <p class="text-gray-700">Saya sangat menyukai kucing,di rumah saya ada 7 kucing</p>
+            <div class="card-actions justify-end">
+                <div class="badge badge-outline">Animal</div>
+                <div class="badge badge-outline">Kucing</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Kegiatan Akhir-Akhir Ini -->
+<div class="hero-content text-center">
+    <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold text-gray-900">Kegiatan Akhir Akhir Ini</h1>
+    </div>
+</div>
+
+<!-- Carousel -->
+<div class="carousel w-full">
+    <!-- Slide 1 -->
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="img/kolintang.jpg" class="w-full h-[400px] object-cover" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  
+    <!-- Slide 2 -->
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="img/pjbl.jpg" class="w-full h-[400px] object-cover" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="img/psj.jpg" class="w-full h-[400px] object-cover" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="img/pjbl ppt.jpg" class="w-full h-[400px] object-cover" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+</div>
+
+<!-- Contact me -->
+<div class="hero-content text-center">
+    <div class="max-w-md">
+        <h1 class="mb-3 text-5xl font-bold text-gray-900">Contact Me</h1> <!-- Mengurangi margin bottom -->
+        <p class="mb-3 text-gray-700"> <!-- Mengurangi margin bottom -->
+            Jika ada kritik dan saran bisa anda sampaikan di form di bawah ini.
+        </p>
+    </div>
+</div>
+
+<!-- Form -->
+<form class="px-7 grid justify-center items-center">
+    <div class="grid gap-6 max-w-lg w-full" id="form">
+        <div class="w-full flex gap-3">
+            <input class="capitalize shadow-2xl p-3 w-full outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-black" type="text" placeholder="First Name" id="First-Name" name="First-Name" required>
+            <input class="p-3 capitalize shadow-2xl glass w-full placeholder:text-black outline-none focus:border-solid focus:border-[1px] border-[#035ec5]" type="text" placeholder="Last Name" id="Last-Name" name="Last-Name">
+        </div>
+        <div class="grid gap-6 w-full">
+            <input class="p-3 shadow-2xl glass w-full placeholder:text-black outline-none focus:border-solid border-[#035ec5] focus:border-[1px]" type="email" placeholder="Kritik & saran" id="Kritik & saran" name="Kritik & saran" required>
+            <input class="p-3 shadow-2xl glass w-full text-black outline-none focus:border-solid focus:border-[1px] border-[#035ec5]" type="date" required>
+        </div>
+        <div class="flex gap-3">
+            <input class="p-3 glass shadow-2xl w-full placeholder:text-black outline-none focus:border-solid focus:border-[1px] border-[#035ec5]" type="password" placeholder="Email" id="Email" name="email" required>
+            <input class="p-3 glass shadow-2xl w-full placeholder:text-black outline-none focus:border-solid focus:border-[1px] border-[#035ec5]" type="password" placeholder="Confirm password" required>
+        </div>
+        <button class="outline-none glass shadow-2xl w-full p-3 bg-[#ffffff42] hover:border-[#035ec5] hover:border-solid hover:border-[1px] hover:text-[#035ec5] font-bold" type="submit">Submit</button>
+    </div>
+</form>
+
+<!---->
+<footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
+    <nav class="grid grid-flow-col gap-4">
+      <a class="link link-hover">About Me</a>
+      <a class="link link-hover">Kesukaan</a>
+      <a class="link link-hover">kesibukan</a>
+      <a class="link link-hover">Kritik & saran</a>
+    </nav>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <aside>
+      <p> Website Ivana Almira Aminto - Thanks For Coming</p>
+    </aside>
+  </footer>
+     
+  
+
+  
+
+    
+</body>
+</html>
